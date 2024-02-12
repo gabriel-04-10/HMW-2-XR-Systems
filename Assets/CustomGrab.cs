@@ -41,7 +41,7 @@ public class CustomGrab : MonoBehaviour
             {
                 grabbedObject.position += deltaPosition;
                 if(doubleRotation)
-                    grabbedObject.rotation *= Quaternion.AngleAxis(2 * deltaRotation.eulerAngles.magnitude, deltaRotation.eulerAngles.normalized);
+                    grabbedObject.rotation *= transform.rotation;
                 else
                     grabbedObject.rotation *= deltaRotation;
             }
@@ -67,4 +67,3 @@ public class CustomGrab : MonoBehaviour
             nearObjects.Remove(t);
     }
 }
-

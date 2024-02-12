@@ -705,10 +705,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98bd3dd5848fa04d96d6acd94be9ab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nearObjects: []
+  nearObjects:
+  - {fileID: 2869796502919838417}
   grabbedObject: {fileID: 2869796502919838417}
-  action: {fileID: 6986180202050166755, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
-  doubleRotation: 1
+  action: {fileID: -1289947363739713011, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
+  doubleRotation: 0
 --- !u!1 &231007750
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +933,7 @@ GameObject:
   - component: {fileID: 437687612}
   - component: {fileID: 437687611}
   - component: {fileID: 437687610}
+  - component: {fileID: 437687613}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -947,13 +949,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437687608}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2869796502919838417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &437687610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1057,6 +1059,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &437687613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437687608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff2d7307ec2e004c8c203dc84eb485a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTarget: {fileID: 756812687}
+  mirror: {fileID: 437687609}
 --- !u!1 &486426932
 GameObject:
   m_ObjectHideFlags: 0
@@ -2772,10 +2788,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98bd3dd5848fa04d96d6acd94be9ab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nearObjects: []
+  nearObjects:
+  - {fileID: 2869796502919838417}
   grabbedObject: {fileID: 2869796502919838417}
-  action: {fileID: 6454596279149084813, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
-  doubleRotation: 1
+  action: {fileID: -5194266436686895582, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
+  doubleRotation: 0
 --- !u!1 &2116555775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,7 +2818,7 @@ Transform:
   m_GameObject: {fileID: 2116555775}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.201}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2889,7 +2906,7 @@ GameObject:
   - component: {fileID: 6523629029822480618}
   m_Layer: 0
   m_Name: 'Magnifying Glass '
-  m_TagString: Grabbable
+  m_TagString: grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2902,15 +2919,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263481169788733634}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 1.7, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.7, z: -0.299}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7109253586214623428}
   - {fileID: 437687609}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6523629029822480615
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2954,13 +2971,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7109253586214623429}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0.3919578, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2869796502919838417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &7109253586214623429
 GameObject:
   m_ObjectHideFlags: 0
