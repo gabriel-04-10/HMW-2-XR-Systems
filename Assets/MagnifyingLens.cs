@@ -12,7 +12,7 @@ public class MagnifyingLens : MonoBehaviour
     void Start()
     {
         // Obtenez le composant Camera attaché à un enfant de cet objet
-        camera = GetComponentInChildren<Camera>();
+        camera = GetComponent<Camera>();
     }
 
     // Mettre à jour est appelé une fois par image
