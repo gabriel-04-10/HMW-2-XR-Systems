@@ -43,7 +43,7 @@ public class CustomGrab : MonoBehaviour
                 if(doubleRotation)
                     grabbedObject.rotation *= transform.rotation;
                 else
-                    grabbedObject.rotation *= deltaRotation;
+                    grabbedObject.rotation= deltaRotation* grabbedObject.rotation;
             }
         }
         else if (grabbedObject)
